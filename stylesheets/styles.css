@@ -169,6 +169,17 @@ a:hover,
 a:active {
   outline: 0;
 }
+/*
+  User Edited Shit
+*/
+::selection {    
+    background:#D33682;
+    color: white;
+}
+::-moz-selection {
+    background:#D33682;
+    color: white;
+}
 
 /* =============================================================================
    Typography
