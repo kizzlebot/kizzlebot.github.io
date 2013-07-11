@@ -1,17 +1,3 @@
-/*
-  User Edited Shit
-*/
-::selection {    
-    background:#D33682;
-    color: white;
-}
-::-moz-selection {
-    background:#D33682;
-    color: white;
-}
-
-
-
 @font-face {
   font-family: 'OpenSansLight';
   src: url("../fonts/OpenSans-Light-webfont.eot");
@@ -183,7 +169,6 @@ a:hover,
 a:active {
   outline: 0;
 }
-
 
 /* =============================================================================
    Typography
