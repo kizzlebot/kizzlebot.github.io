@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Kizzlebot.github.io by kizzlebot</title>
@@ -15,7 +16,17 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+		<!-- Ace Editor -->
+		<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+		</style>
+		<!-- Ace Editor END -->
   </head>
   <body>
     <div id="header">
@@ -33,7 +44,8 @@
 	      <span class="credits left">Project maintained by <a href="https://github.com/kizzlebot">kizzlebot</a></span>
 	      <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
 	    </div>
-
+	    
+	    
 			<h1><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Kizzlebot's Repositories</h1>
 			<ul>
 				<li><a href="http://kizzlebot.github.io/Linux-Kernel">Linux Kernel</a></li>
@@ -48,6 +60,18 @@
 			<ul>
 				<li>
 					<a href="http://youseeeffects.github.io/">YouSeeEffects</a></li>
+					<!-- Ace Editor START -->
+					<div id="editor">function foo(items) {
+		    		var x = "All this is syntax highlighted";
+		    		return x;
+					}</div>
+					<!-- Ace Editor END -->
+					<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+					<script>
+				    var editor = ace.edit("editor");
+				    editor.setTheme("ace/theme/monokai");
+				    editor.getSession().setMode("ace/mode/javascript");
+					</script>
 			</ul>
 		</section>
 
