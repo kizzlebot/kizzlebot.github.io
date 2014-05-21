@@ -1,9 +1,9 @@
 body {
   font-family: 'Droid Serif', serif;
-  background-color: #041921;
+  /*  background-color:rgb(4,25,33);*/
 }
 .main {
-  background-color: #0d2934;
+  /* background-color:rgb(13,41,52);*/
 }
 #header,
 #content {
