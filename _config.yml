@@ -1,3 +1,8 @@
-name: Your New Jekyll Site
+name: James Choi's GitHub Page
 markdown: redcarpet
 pygments: true
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
