@@ -1,0 +1,95 @@
+name: 'James Choi'
+info:
+meta:
+  format: FRESH@0.6.0
+  version: 0.1.0
+location:
+  city: Davie
+  region: Florida
+  country: US
+  code: '33325'
+  address: '12850 W State Road 84'
+employment:
+  history:
+    -
+      position: 'IT Intern'
+      employer: 'Lowndes, Drosdick, Kantor and Reed'
+      summary: 'Developed several web applications and scheduled jobs using .NET framework.'
+      start: 2015-01
+      end: 2015-05
+      keywords: []
+      highlights:
+        - 'Developed "Employee of the Month" web application using ASP.net MVC 5 and Angular.js'
+        - 'Implemented "Support Ticketing" system using ASP.net MVC 5 (with SignalR) and Angular.js'
+    -
+      position: 'Chief Developer/Architect'
+      employer: ITSeq
+      summary: 'Designed and implemented business process management software targeted towards legal industry.'
+      start: 2015-05
+      end: 2015-12
+      keywords: []
+      highlights:
+        - 'Built on Azure technogies'
+    -
+      position: 'Work experience program'
+      employer: 'Lockheed Martin'
+      summary: 'Front end redesign for in-company intranet pages using Angular.js.'
+      start: 2014-07
+      end: 2014-12
+      keywords: []
+      highlights: []
+education:
+  level: ""
+  history:
+    -
+      institution: 'University of Central Florida'
+      start: 2012-01
+      end: 2016-06
+      grade: '3.5'
+      curriculum: []
+      summary: ""
+      area: 'Computer Engineering'
+      studyType: Bachelor
+skills:
+  sets:
+    -
+      name: 'Web Development'
+      level: Master
+      skills:
+        - HTML
+        - CSS
+        - Javascript
+writing:
+  -
+    title: Publication
+    publisher: Company
+    url: 'http://publication.com'
+    date: '2014-10-01'
+    summary: Description...
+social:
+  -
+    label: Github
+    network: Github
+    url: 'http://github.com/kizzlebot'
+    user: kizzlebot
+  -
+    label: LinkedIn
+    network: LinkedIn
+    url: 'https://www.linkedin.com/in/jchoi2012'
+    user: jchoi2012
+interests:
+  -
+    name: Wildlife
+    keywords:
+      - Ferrets
+      - Unicorns
+testimonials:
+  -
+    name: 'Jane Doe'
+    flavor: professional
+    quote: Reference...
+    private: false
+languages:
+  -
+    language: English
+    fluency: 'Native speaker'
