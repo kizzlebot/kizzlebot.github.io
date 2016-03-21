@@ -1,0 +1,96 @@
+{
+  "basics": {
+    "name": "James Choi",
+    "label": ["Computer Engineer", "Software Developer", "Full Stack Developer"],
+    "picture": "https://github.com/account",
+    "email": "jchoi2012@knights.ucf.edu",
+    "phone": "(954) 907-4631",
+    "website": "http://kizzlebot.github.io",
+    "summary": "Computer engineer who enjoys developing applications using the latest technologies",
+    "location": {
+      "address": "12850 W State Road 84",
+      "postalCode": "33325",
+      "city": "Davie",
+      "countryCode": "US",
+      "region": "Florida"
+    },
+    "profiles": [{
+      "network": "Github",
+      "username": "kizzlebot",
+      "url": "http://github.com/kizzlebot"
+    },{
+      "network": "LinkedIn",
+      "username": "jchoi2012",
+      "url": "https://www.linkedin.com/in/jchoi2012"
+    }]
+  },
+  "work": [{
+    "company": "Lowndes, Drosdick, Kantor and Reed",
+    "position": "IT Intern",
+    "startDate": "2015-01",
+    "endDate": "2015-05",
+    "summary": "Developed several web applications and scheduled jobs using .NET framework.",
+    "highlights": [
+      "Developed \"Employee of the Month\" web application using ASP.net MVC 5 and Angular.js",
+      "Implemented \"Support Ticketing\" system using ASP.net MVC 5 (with SignalR) and Angular.js"
+    ]
+  },{
+    "company": "ITSeq",
+    "position": "Chief Developer/Architect",
+    "startDate": "2015-05",
+    "endDate": "2015-12",
+    "summary": "Designed and implemented business process management software targeted towards legal industry.",
+    "highlights": [
+      "Built on Azure technogies"
+    ]
+  },{
+    "company": "Lockheed Martin",
+    "position": "Work experience program",
+    "startDate": "2014-07",
+    "endDate": "2014-12",
+    "summary": "Front end redesign for in-company intranet pages using Angular.js.",
+    "highlights": [
+    ]
+  }],
+  "education": [{
+    "institution": "University of Central Florida",
+    "area": "Computer Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2012-01",
+    "endDate": "2016-06",
+    "gpa": "3.5",
+    "courses": [
+    ]
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference..."
+  }]
+}
