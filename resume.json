@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "James Choi",
-    "label": ["Computer Engineer", "Software Developer", "Full Stack Developer"],
-    "picture": "https://github.com/account",
+    "label": "Full Stack Developer, Software Engineer",
+    "picture": "http://i.imgur.com/dG8JEUc.png",
     "email": "jchoi2012@knights.ucf.edu",
     "phone": "(954) 907-4631",
-    "website": "http://kizzlebot.github.io",
-    "summary": "Computer engineer who enjoys developing applications using the latest technologies",
+    "website": "kizzlebot.github.io",
+    "summary": "",
     "location": {
       "address": "12850 W State Road 84",
       "postalCode": "33325",
@@ -14,83 +14,112 @@
       "countryCode": "US",
       "region": "Florida"
     },
-    "profiles": [{
-      "network": "Github",
-      "username": "kizzlebot",
-      "url": "http://github.com/kizzlebot"
-    },{
-      "network": "LinkedIn",
-      "username": "jchoi2012",
-      "url": "https://www.linkedin.com/in/jchoi2012"
-    }]
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "kizzlebot",
+        "url": "http://github.com/kizzlebot"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jchoi2012",
+        "url": "https://www.linkedin.com/in/jchoi2012"
+      },
+      {
+        "network": "StackOverflow",
+        "username": "2330303",
+        "url": "http://stackoverflow.com/users/2330303/james-choi"
+      }
+    ]
   },
-  "work": [{
-    "company": "Lowndes, Drosdick, Kantor and Reed",
-    "position": "IT Intern",
-    "startDate": "2015-01",
-    "endDate": "2015-05",
-    "summary": "Developed several web applications and scheduled jobs using .NET framework.",
-    "highlights": [
-      "Developed \"Employee of the Month\" web application using ASP.net MVC 5 and Angular.js",
-      "Implemented \"Support Ticketing\" system using ASP.net MVC 5 (with SignalR) and Angular.js"
-    ]
-  },{
-    "company": "ITSeq",
-    "position": "Chief Developer/Architect",
-    "startDate": "2015-05",
-    "endDate": "2015-12",
-    "summary": "Designed and implemented business process management software targeted towards legal industry.",
-    "highlights": [
-      "Built on Azure technogies"
-    ]
-  },{
-    "company": "Lockheed Martin",
-    "position": "Work experience program",
-    "startDate": "2014-07",
-    "endDate": "2014-12",
-    "summary": "Front end redesign for in-company intranet pages using Angular.js.",
-    "highlights": [
-    ]
-  }],
-  "education": [{
-    "institution": "University of Central Florida",
-    "area": "Computer Engineering",
-    "studyType": "Bachelor",
-    "startDate": "2012-01",
-    "endDate": "2016-06",
-    "gpa": "3.5",
-    "courses": [
-    ]
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "website": "http://publication.com",
-    "summary": "Description..."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference..."
-  }]
+  "work": [
+    {
+      "company": "Lowndes, Drosdick, Kantor and Reed",
+      "position": "IT Intern",
+      "website": "www.lowndes-law.com/",
+      "startDate": "2015-01",
+      "endDate": "2015-05",
+      "summary": "Developed several web applications and scheduled jobs using .NET framework.",
+      "highlights": [
+        "Developed \"Employee of the Month\" web application using ASP.net MVC 5 and Angular.js",
+        "Implemented \"Support Ticketing\" system using ASP.net MVC 5 (with SignalR) and Angular.js"
+      ]
+    },
+    {
+      "company": "ITSeq",
+      "position": "Chief Developer/Architect",
+      "website": "",
+      "startDate": "2015-05",
+      "endDate": "2015-12",
+      "summary": "Designed and implemented business process management software targeted towards legal industry.",
+      "highlights": [
+        "Built on Azure technologies and ASP.net"
+      ]
+    },
+    {
+      "company": "Lockheed Martin",
+      "position": "Work experience program",
+      "website": "http://www.lockheedmartin.com/",
+      "startDate": "2014-07",
+      "endDate": "2014-12",
+      "summary": "Front end implementation for webpages within Lockheed Martin's internal network pages",
+      "highlights": [
+        "Learned and implemented angular.js",
+        "Learned and implemented bundling pipeline via Gulp.js"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Central Florida",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2012-01",
+      "endDate": "2016-06",
+      "gpa": "3.5",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "ASP.net",
+      "level": "Experienced",
+      "keywords": [
+        "Microsoft",
+        "ASP.net",
+        "Visual Studio",
+        ".NET Framework",
+        "C#"
+      ]
+    },
+    {
+      "name": "Express.js",
+      "level": "Advanced",
+      "keywords": [
+        "Express.js",
+        "Node.js",
+        "Javascript",
+        "babeljs"
+      ]
+    },
+    {
+      "name": "Django",
+      "level": "Intermediate",
+      "keywords": [
+        "Django",
+        "Python"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [],
+  "references": []
 }
