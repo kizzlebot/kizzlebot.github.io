@@ -1,12 +1,6 @@
 {
   "basics": {
     "name": "James Choi",
-    "label": "Full Stack Developer, Software Engineer",
-    "picture": "http://i.imgur.com/dG8JEUc.png",
-    "email": "jchoi2012@knights.ucf.edu",
-    "phone": "(954) 907-4631",
-    "website": "kizzlebot.github.io",
-    "summary": "",
     "location": {
       "address": "12850 W State Road 84",
       "postalCode": "33325",
@@ -35,8 +29,8 @@
   "work": [
     {
       "company": "Lowndes, Drosdick, Kantor and Reed",
-      "position": "IT Intern",
       "website": "www.lowndes-law.com/",
+      "position": "IT Intern",
       "startDate": "2015-01",
       "endDate": "2015-05",
       "summary": "Developed several web applications and scheduled jobs using .NET framework.",
@@ -47,8 +41,8 @@
     },
     {
       "company": "ITSeq",
-      "position": "Chief Developer/Architect",
       "website": "",
+      "position": "Chief Developer/Architect",
       "startDate": "2015-05",
       "endDate": "2015-12",
       "summary": "Designed and implemented business process management software targeted towards legal industry.",
@@ -58,8 +52,8 @@
     },
     {
       "company": "Lockheed Martin",
-      "position": "Work experience program",
       "website": "http://www.lockheedmartin.com/",
+      "position": "Work experience program",
       "startDate": "2014-07",
       "endDate": "2014-12",
       "summary": "Front end implementation for webpages within Lockheed Martin's internal network pages",
@@ -69,20 +63,17 @@
       ]
     }
   ],
-  "volunteer": [],
   "education": [
     {
       "institution": "University of Central Florida",
-      "area": "Computer Engineering",
-      "studyType": "Bachelor",
+      "gpa": "3.5",
+      "courses": [],
       "startDate": "2012-01",
       "endDate": "2016-06",
-      "gpa": "3.5",
-      "courses": []
+      "area": "Computer Engineering",
+      "studyType": "Bachelor"
     }
   ],
-  "awards": [],
-  "publications": [],
   "skills": [
     {
       "name": "ASP.net",
@@ -114,12 +105,12 @@
       ]
     }
   ],
+  "interests": [],
+  "references": 0,
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker"
     }
-  ],
-  "interests": [],
-  "references": []
+  ]
 }

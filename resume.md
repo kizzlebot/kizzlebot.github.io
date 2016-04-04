@@ -1,4 +1,4 @@
-James Jaesung Choi
+James Choi
 ============
 
 
@@ -23,11 +23,13 @@ Developed several web applications and scheduled jobs using .NET framework.
 ### *Chief Developer/Architect*, ITSeq (2015-05 — 2015-12)
 
 Designed and implemented business process management software targeted towards legal industry.
-  - Built on Azure technogies
+  - Built on Azure technologies and ASP.net
 
 ### *Work experience program*, [Lockheed Martin](http://www.lockheedmartin.com/) (2014-07 — 2014-12)
 
-Front end implementation for webpages within Lockheed Martin's internal network pages using Angular.js.
+Front end implementation for webpages within Lockheed Martin's internal network pages
+  - Learned and implemented angular.js
+  - Learned and implemented bundling pipeline via Gulp.js
 
 
 

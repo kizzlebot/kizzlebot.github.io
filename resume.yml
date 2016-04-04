@@ -1,4 +1,4 @@
-name: 'James Jaesung Choi'
+name: 'James Choi'
 info:
 meta:
   format: FRESH@0.6.0
@@ -31,16 +31,18 @@ employment:
       url: ""
       keywords: []
       highlights:
-        - 'Built on Azure technogies'
+        - 'Built on Azure technologies and ASP.net'
     -
       position: 'Work experience program'
       employer: 'Lockheed Martin'
-      summary: 'Front end implementation for webpages within Lockheed Martin''s internal network pages using Angular.js.'
+      summary: 'Front end implementation for webpages within Lockheed Martin''s internal network pages'
       start: 2014-07
       end: 2014-12
       url: 'http://www.lockheedmartin.com/'
       keywords: []
-      highlights: []
+      highlights:
+        - 'Learned and implemented angular.js'
+        - 'Learned and implemented bundling pipeline via Gulp.js'
 education:
   level: ""
   history:
@@ -53,6 +55,7 @@ education:
       summary: ""
       area: 'Computer Engineering'
       studyType: Bachelor
+service:
 skills:
   sets:
     -
@@ -78,6 +81,7 @@ skills:
       skills:
         - Django
         - Python
+writing: []
 social:
   -
     label: Github
