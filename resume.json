@@ -2,115 +2,336 @@
   "basics": {
     "name": "James Choi",
     "location": {
-      "address": "12850 W State Road 84",
-      "postalCode": "33325",
-      "city": "Davie",
-      "countryCode": "US",
-      "region": "Florida"
+      "address": "12850 W State Road 84\nDavie, FL 33325",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
-    "profiles": [
-      {
-        "network": "Github",
-        "username": "kizzlebot",
-        "url": "http://github.com/kizzlebot"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "jchoi2012",
-        "url": "https://www.linkedin.com/in/jchoi2012"
-      },
-      {
-        "network": "StackOverflow",
-        "username": "2330303",
-        "url": "http://stackoverflow.com/users/2330303/james-choi"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
-      "company": "Lowndes, Drosdick, Kantor and Reed",
-      "website": "www.lowndes-law.com/",
-      "position": "IT Intern",
-      "startDate": "2015-01",
-      "endDate": "2015-05",
-      "summary": "Developed several web applications and scheduled jobs using .NET framework.",
-      "highlights": [
-        "Developed \"Employee of the Month\" web application using ASP.net MVC 5 and Angular.js",
-        "Implemented \"Support Ticketing\" system using ASP.net MVC 5 (with SignalR) and Angular.js"
-      ]
+      "company": "\"Self Employed\"",
+      "website": "",
+      "position": "Freelance Web Developer",
+      "startDate": "2016-04-01",
+      "summary": "Freelance web application development using nodejs, reactjs and mongodb technologies.",
+      "highlights": []
     },
     {
       "company": "ITSeq",
       "website": "",
-      "position": "Chief Developer/Architect",
-      "startDate": "2015-05",
-      "endDate": "2015-12",
-      "summary": "Designed and implemented business process management software targeted towards legal industry.",
-      "highlights": [
-        "Built on Azure technologies and ASP.net"
-      ]
+      "position": "Lead Software Developer/Architect",
+      "startDate": "2015-04-01",
+      "endDate": "2015-12-01",
+      "summary": "Lead developer and architect responsible for design and implementation of minimal viable software product targeted for use in the legal sector.  Microsoft Azure services architecture built with ASP.net \"Web Role\" and Angular.js user interface, C# DLL libraries in .NET framework, Azure cloud services in \"Worker Role\", SQL Server database.",
+      "highlights": []
+    },
+    {
+      "company": "Lowndes, Drosdick, Doster, Kantor & Reed, P.A.",
+      "website": "",
+      "position": "IT Intern",
+      "startDate": "2015-01-01",
+      "endDate": "2015-05-01",
+      "summary": "First intern hired by the law firm's IT department.  Planned, designed, implemented and tested web application solutions.  Improved and updated law firm's current implementations.\n\n- Data serialization interfaces used by internal company software to consume data resources for business process using data that originates from external sources.\n\n- Implemented revamped \"Employee of the Month\" web application built using ASP.net MVC 5 and Angular.js which allowed company employees (searched via active directory) to nominate colleagues (typeahead via data from SQL Server) for \"Employee of the Month\" using updated modern UI powered by angular.js.  The application streamlined the monthly EOM voting procedures by automatic dispatch of emails containing vote summaries for the month to designated employees.\n\n- Wrote real-time web application in ASP.net MVC 5 using SignalR (websockets) and Angular.js for a  \"job ticketing\" system that allows members of the legal department to submit requests to document specialists who resolve the request after proofreading/processing provided document.",
+      "highlights": []
     },
     {
       "company": "Lockheed Martin",
-      "website": "http://www.lockheedmartin.com/",
-      "position": "Work experience program",
-      "startDate": "2014-07",
-      "endDate": "2014-12",
-      "summary": "Front end implementation for webpages within Lockheed Martin's internal network pages",
-      "highlights": [
-        "Learned and implemented angular.js",
-        "Learned and implemented bundling pipeline via Gulp.js"
-      ]
+      "website": "",
+      "position": "Work Experience Student",
+      "startDate": "2014-09-01",
+      "endDate": "2015-02-01",
+      "summary": "UCF student contracted to work in UCF's Work Experience Program in cooperation with Lockheed Martin.  Redesigned Mechanical Engineering department's intranet homepage using Sharepoint and Angular.js.",
+      "highlights": []
+    },
+    {
+      "company": "Broward College",
+      "website": "",
+      "position": "Learning Resource Center",
+      "startDate": "2011-01-01",
+      "endDate": "2012-01-01",
+      "summary": "Registration, Service, Student Services, Check-ins, Check-outs",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Central Florida",
-      "gpa": "3.5",
+      "institution": "Broward Community College",
+      "gpa": "",
       "courses": [],
-      "startDate": "2012-01",
-      "endDate": "2016-06",
-      "area": "Computer Engineering",
-      "studyType": "Bachelor"
+      "startDate": "2009-01-01",
+      "endDate": "2012-01-01",
+      "area": "",
+      "studyType": "Associate's Degree"
+    },
+    {
+      "institution": "University of Central Florida",
+      "gpa": "",
+      "courses": [],
+      "startDate": "2012-01-01",
+      "endDate": "2016-01-01",
+      "area": "",
+      "studyType": "Bachelor’s Degree"
     }
   ],
   "skills": [
     {
-      "name": "ASP.net",
-      "level": "Experienced",
-      "keywords": [
-        "Microsoft",
-        "ASP.net",
-        "Visual Studio",
-        ".NET Framework",
-        "C#"
-      ]
+      "name": "Django",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Visual Studio",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Erlang",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Haskell",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Shell Scripting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": ".NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Unix",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PowerPoint",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C++",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Design Patterns",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ASP.NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teamwork",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mean Stack",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AngularJS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": []
     },
     {
       "name": "Express.js",
-      "level": "Advanced",
-      "keywords": [
-        "Express.js",
-        "Node.js",
-        "Javascript",
-        "babeljs"
-      ]
+      "level": "",
+      "keywords": []
     },
     {
-      "name": "Django",
-      "level": "Intermediate",
-      "keywords": [
-        "Django",
-        "Python"
-      ]
+      "name": "Functional Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ASP.NET MVC",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": ".NET Framework",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Application Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows Azure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "x86 Assembly",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MSP430",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GNU Debugger",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sales",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
     }
   ],
-  "interests": [],
   "references": 0,
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Full professional"
+    },
+    {
+      "language": "Korean",
+      "fluency": "Elementary"
     }
   ]
 }

@@ -4,103 +4,283 @@ meta:
   format: FRESH@0.6.0
   version: 0.1.0
 location:
-  city: Davie
-  region: Florida
-  country: US
-  code: '33325'
-  address: '12850 W State Road 84'
+  city: ""
+  region: ""
+  country: ""
+  code: ""
+  address: "12850 W State Road 84\nDavie, FL 33325"
 employment:
   history:
     -
-      position: 'IT Intern'
-      employer: 'Lowndes, Drosdick, Kantor and Reed'
-      summary: 'Developed several web applications and scheduled jobs using .NET framework.'
-      start: 2015-01
-      end: 2015-05
-      url: www.lowndes-law.com/
-      keywords: []
-      highlights:
-        - 'Developed "Employee of the Month" web application using ASP.net MVC 5 and Angular.js'
-        - 'Implemented "Support Ticketing" system using ASP.net MVC 5 (with SignalR) and Angular.js'
-    -
-      position: 'Chief Developer/Architect'
-      employer: ITSeq
-      summary: 'Designed and implemented business process management software targeted towards legal industry.'
-      start: 2015-05
-      end: 2015-12
+      position: 'Freelance Web Developer'
+      employer: '"Self Employed"'
+      summary: 'Freelance web application development using nodejs, reactjs and mongodb technologies.'
+      current: true
+      start: '2016-04-01'
       url: ""
       keywords: []
-      highlights:
-        - 'Built on Azure technologies and ASP.net'
+      highlights: []
     -
-      position: 'Work experience program'
-      employer: 'Lockheed Martin'
-      summary: 'Front end implementation for webpages within Lockheed Martin''s internal network pages'
-      start: 2014-07
-      end: 2014-12
-      url: 'http://www.lockheedmartin.com/'
+      position: 'Lead Software Developer/Architect'
+      employer: ITSeq
+      summary: 'Lead developer and architect responsible for design and implementation of minimal viable software product targeted for use in the legal sector.  Microsoft Azure services architecture built with ASP.net "Web Role" and Angular.js user interface, C# DLL libraries in .NET framework, Azure cloud services in "Worker Role", SQL Server database.'
+      start: '2015-04-01'
+      end: '2015-12-01'
+      url: ""
       keywords: []
-      highlights:
-        - 'Learned and implemented angular.js'
-        - 'Learned and implemented bundling pipeline via Gulp.js'
+      highlights: []
+    -
+      position: 'IT Intern'
+      employer: 'Lowndes, Drosdick, Doster, Kantor & Reed, P.A.'
+      summary: "First intern hired by the law firm's IT department.  Planned, designed, implemented and tested web application solutions.  Improved and updated law firm's current implementations.\n\n- Data serialization interfaces used by internal company software to consume data resources for business process using data that originates from external sources.\n\n- Implemented revamped \"Employee of the Month\" web application built using ASP.net MVC 5 and Angular.js which allowed company employees (searched via active directory) to nominate colleagues (typeahead via data from SQL Server) for \"Employee of the Month\" using updated modern UI powered by angular.js.  The application streamlined the monthly EOM voting procedures by automatic dispatch of emails containing vote summaries for the month to designated employees.\n\n- Wrote real-time web application in ASP.net MVC 5 using SignalR (websockets) and Angular.js for a  \"job ticketing\" system that allows members of the legal department to submit requests to document specialists who resolve the request after proofreading/processing provided document."
+      start: '2015-01-01'
+      end: '2015-05-01'
+      url: ""
+      keywords: []
+      highlights: []
+    -
+      position: 'Work Experience Student'
+      employer: 'Lockheed Martin'
+      summary: 'UCF student contracted to work in UCF''s Work Experience Program in cooperation with Lockheed Martin.  Redesigned Mechanical Engineering department''s intranet homepage using Sharepoint and Angular.js.'
+      start: '2014-09-01'
+      end: '2015-02-01'
+      url: ""
+      keywords: []
+      highlights: []
+    -
+      position: 'Learning Resource Center'
+      employer: 'Broward College'
+      summary: 'Registration, Service, Student Services, Check-ins, Check-outs'
+      start: '2011-01-01'
+      end: '2012-01-01'
+      url: ""
+      keywords: []
+      highlights: []
 education:
   level: ""
   history:
     -
-      institution: 'University of Central Florida'
-      start: 2012-01
-      end: 2016-06
-      grade: '3.5'
+      institution: 'Broward Community College'
+      start: '2009-01-01'
+      end: '2012-01-01'
+      grade: ""
       curriculum: []
       summary: ""
-      area: 'Computer Engineering'
-      studyType: Bachelor
-service:
+      area: ""
+      studyType: 'Associate''s Degree'
+    -
+      institution: 'University of Central Florida'
+      start: '2012-01-01'
+      end: '2016-01-01'
+      grade: ""
+      curriculum: []
+      summary: ""
+      area: ""
+      studyType: 'Bachelor’s Degree'
 skills:
   sets:
     -
-      name: ASP.net
-      level: Experienced
-      skills:
-        - Microsoft
-        - ASP.net
-        - 'Visual Studio'
-        - '.NET Framework'
-        - 'C#'
+      name: Django
+      level: ""
+      skills: []
+    -
+      name: 'Visual Studio'
+      level: ""
+      skills: []
+    -
+      name: Erlang
+      level: ""
+      skills: []
+    -
+      name: 'Test Driven Development'
+      level: ""
+      skills: []
+    -
+      name: MongoDB
+      level: ""
+      skills: []
+    -
+      name: Haskell
+      level: ""
+      skills: []
+    -
+      name: 'Shell Scripting'
+      level: ""
+      skills: []
+    -
+      name: .NET
+      level: ""
+      skills: []
+    -
+      name: Unix
+      level: ""
+      skills: []
+    -
+      name: jQuery
+      level: ""
+      skills: []
+    -
+      name: PowerPoint
+      level: ""
+      skills: []
+    -
+      name: HTML5
+      level: ""
+      skills: []
+    -
+      name: MySQL
+      level: ""
+      skills: []
+    -
+      name: PostgreSQL
+      level: ""
+      skills: []
+    -
+      name: 'Microsoft SQL Server'
+      level: ""
+      skills: []
+    -
+      name: 'Software Development'
+      level: ""
+      skills: []
+    -
+      name: C++
+      level: ""
+      skills: []
+    -
+      name: 'Software Engineering'
+      level: ""
+      skills: []
+    -
+      name: C
+      level: ""
+      skills: []
+    -
+      name: 'Computer Science'
+      level: ""
+      skills: []
+    -
+      name: 'Web Development'
+      level: ""
+      skills: []
+    -
+      name: 'Design Patterns'
+      level: ""
+      skills: []
+    -
+      name: ASP.NET
+      level: ""
+      skills: []
+    -
+      name: Teamwork
+      level: ""
+      skills: []
+    -
+      name: 'Mean Stack'
+      level: ""
+      skills: []
+    -
+      name: SQL
+      level: ""
+      skills: []
+    -
+      name: Programming
+      level: ""
+      skills: []
+    -
+      name: HTML
+      level: ""
+      skills: []
+    -
+      name: CSS
+      level: ""
+      skills: []
+    -
+      name: JavaScript
+      level: ""
+      skills: []
+    -
+      name: AngularJS
+      level: ""
+      skills: []
+    -
+      name: React.js
+      level: ""
+      skills: []
+    -
+      name: Node.js
+      level: ""
+      skills: []
+    -
+      name: 'C#'
+      level: ""
+      skills: []
     -
       name: Express.js
-      level: Advanced
-      skills:
-        - Express.js
-        - Node.js
-        - Javascript
-        - babeljs
+      level: ""
+      skills: []
     -
-      name: Django
-      level: Intermediate
-      skills:
-        - Django
-        - Python
-writing: []
-social:
-  -
-    label: Github
-    network: Github
-    url: 'http://github.com/kizzlebot'
-    user: kizzlebot
-  -
-    label: LinkedIn
-    network: LinkedIn
-    url: 'https://www.linkedin.com/in/jchoi2012'
-    user: jchoi2012
-  -
-    label: StackOverflow
-    network: StackOverflow
-    url: 'http://stackoverflow.com/users/2330303/james-choi'
-    user: '2330303'
-interests: []
+      name: 'Functional Programming'
+      level: ""
+      skills: []
+    -
+      name: 'ASP.NET MVC'
+      level: ""
+      skills: []
+    -
+      name: '.NET Framework'
+      level: ""
+      skills: []
+    -
+      name: 'Web Application Development'
+      level: ""
+      skills: []
+    -
+      name: 'Windows Azure'
+      level: ""
+      skills: []
+    -
+      name: Java
+      level: ""
+      skills: []
+    -
+      name: Python
+      level: ""
+      skills: []
+    -
+      name: Git
+      level: ""
+      skills: []
+    -
+      name: 'x86 Assembly'
+      level: ""
+      skills: []
+    -
+      name: MSP430
+      level: ""
+      skills: []
+    -
+      name: 'GNU Debugger'
+      level: ""
+      skills: []
+    -
+      name: Linux
+      level: ""
+      skills: []
+    -
+      name: Sales
+      level: ""
+      skills: []
+    -
+      name: 'Microsoft Office'
+      level: ""
+      skills: []
+social: []
 testimonials: 0
 languages:
   -
     language: English
-    fluency: 'Native speaker'
+    fluency: 'Full professional'
+  -
+    language: Korean
+    fluency: Elementary
