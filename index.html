@@ -4,125 +4,12 @@
     <meta charset="utf-8">
     <title>James Choi</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
   </head>
 
   <body data-spy="scroll" data-target="#navbar-example">
-    <div class="wrapper" >
-
-      <nav class="nav__wrapper" id="navbar-example">
-        <ul class="nav">
-
-          <li role="presentation" class="active">
-            <a href="#section1">
-              <span class="nav__counter">01</span>
-              <h3 class="nav__title">Intro</h3>
-              <p class="nav__body"><strong>Timeline-style navigation</strong>. Scroll down to see what happens, or click on a number in the nav.</p>
-            </a>
-          </li>
-
-          <li role="presentation">
-            <a href="#section2">
-              <span class="nav__counter">02</span>
-              <h3 class="nav__title">Section 2 Title</h3>
-              <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
-            </a>
-          </li>
-
-          <li role="presentation">
-            <a href="#section3">
-              <span class="nav__counter">03</span>
-              <h3 class="nav__title">Section 3 Title</h3>
-              <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
-            </a>
-          </li>
-
-          <li role="presentation">
-            <a href="#section4">
-              <span class="nav__counter">04</span>
-              <h3 class="nav__title">Section 4 Title</h3>
-              <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
-            </a>
-          </li>
-
-          <li role="presentation">
-            <a href="#section5">
-              <span class="nav__counter">05</span>
-              <h3 class="nav__title">Section 5 Title</h3>
-              <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
-            </a>
-          </li>
-
-          <li role="presentation">
-            <a href="#section6">
-              <span class="nav__counter">06</span>
-              <h3 class="nav__title">Section 6 Title</h3>
-              <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
-            </a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <section class="section section1" id="section1">
-        Scroll down or use the nav.
-      </section>
-
-      <section class="section section2" id="section2">
-        Section 2
-      </section>
-
-      <section class="section section3" id="section3">
-        Section 3
-      </section>
-
-      <section class="section section4" id="section4">
-        Section 4
-      </section>
-
-      <section class="section section5" id="section5">
-        Section 5
-      </section>
-
-      <section class="section section6" id="section6">
-        Section 6
-      </section>
-
-
-      <script src="https://code.jquery.com/jquery.min.js"></script>
-      <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
-      <script src="https://fb.me/react-with-addons-0.14.7.min.js"></script>
-      <script src="https://fb.me/react-dom-0.14.7.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.5.1/redux.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/4.4.5/react-redux.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.0.1/redux-thunk.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/history/1.17.0/History.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/1.0.3/ReactRouter.min.js"></script>
-      <script src="https://npmcdn.com/react-router-active-component@3.0.0/umd/react-router-active-component.js"></script>
-      <script src='https://npmcdn.com/react-motion/build/react-motion.js'></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
-      <script>
-      
-// SMOOTH SCROLLING SECTIONS
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
-});
-      </script>
-    </div>
+    <div id="myApp"></div>
+    <script src="/public/bundle.js"> </script>
   </body>
 </html>
