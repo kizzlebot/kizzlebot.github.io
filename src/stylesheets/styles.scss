@@ -1,22 +1,51 @@
+@mixin font_config($size:-1, $weight:-1, $family:""){
+  @if $size > 0 {
+    font-size: $size;
+  }
+  @if $weight > 0 {
+    font-weight: $weight;
+  }
+  @if $family != "" {
+    font-family: $family;
+  }
+}
+
+
+
 .wrapper {
+  $fam:'Roboto Slab', serif;
+  @include font_config(0, 300, $fam);
+
   min-height: 100vh;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
   color: #fff;
-  position: relative; 
+  position: relative;
+
+}
+
+@mixin flex_config($justify:"", $align: ""){
+  display: flex;
+
+  @if $justify != "" {
+    justify-content: $justify;
+  }
+  @if $align != "" {
+    align-items: $align;
+  }
 }
 
 section {
   height: 100vh;
-  font-size: 40px;
-  font-weight: 100;
+
+  @include font_config(40px, 100);
+
   background-color: #22A7F0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flex_config(center, center);
 
-  $colors: white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00;
+  $colors: white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue, white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue;
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
       background: nth($colors, $i)
@@ -24,7 +53,10 @@ section {
   }
 }
 
+
+
 .nav {
+  margin: 0 0 100px 30px;
   &__wrapper {
     position: fixed;
     height: 100%;
@@ -35,16 +67,15 @@ section {
     justify-content: flex-end;
   }
 
-  & {
-    margin: 0 0 100px 30px; 
-  }
+
   &__counter {
     font-size: 24px;
     transition: all 0.15s ease-out;
   }
   &__title {
-    font-size: 32px;
-    font-weight: 300;
+    @include font_config(32px, 300);
+    // font-size: 32px;
+    // font-weight: 300;
     margin: 0 0 0.25em;
     width: 300px;
     height: 0;
@@ -53,9 +84,9 @@ section {
     transition: height 0.3s ease-out, opacity 0.2s ease-out;
   }
   &__body {
-    font-weight: 100;
-    font-size: 18px;
-    font-size: 18px;
+    @include font_config(18px, 100);
+    // font-size: 18px;
+    // font-weight: 100;
     width: 300px;
     height: 0;
     overflow: hidden;
@@ -86,9 +117,17 @@ section {
       color: #fff;
       transition: all 0.15s ease-out;
 
+      .span_title{
+        transition:all 0.15s ease-out;
+        opacity:0;
+      }
+
       &:hover {
         background-color: transparent;
-        padding-left: 1em
+        padding-left: 1em;
+        .span_title{
+          opacity:1;
+        }
       }
       &:focus {
         background-color: transparent;
@@ -119,7 +158,5 @@ section {
         overflow: visible;
       }
     }
-
   }
-
 }

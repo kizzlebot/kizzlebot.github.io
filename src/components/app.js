@@ -1,8 +1,8 @@
 
 import React from 'react';
 var $ = require('jquery');
-
 var resume = require('../resume/resume.json');
+import TOC from './TOC';
 
 
 export default class MainApp extends React.Component {
@@ -34,27 +34,13 @@ export default class MainApp extends React.Component {
     })
   }
   render() {
-    var TOC = Object.keys(resume).map((e, i) => {
-      return (
-        <li key={`toc-${i}`} role="presentation" className={(i == 0) ? 'active': ''}>
-          <a href={`#section${i+1}`} ref={`toc-${i}`}>
-            <span className="nav__counter">0{`${i+1}`}</span>
-            <h3 className="nav__title">{`${e}`}</h3>
-            <p className="nav__body">
-              <strong>Timeline-style navigation</strong>.
-                Scroll down to see what happens, or click on a number in the nav.
-            </p>
-          </a>
-        </li>
-      )
-    });
+
+    var sections = Object.keys(resume).reduce((prev, curr) => prev.concat([{ title:curr }]), []);
+
     return (
       <div className="wrapper">
-        <nav className="nav__wrapper" id="navbar-example">
-          <ul className="nav">
-            {TOC}
-          </ul>
-        </nav>
+        <TOC sections={sections} />
+
         {Object.keys(this.state).map((e, i) => {
           return (
             <section key={`section${i+1}`} className={`section section${i+1}`} id={`section${i+1}`}>
