@@ -2,17 +2,17 @@
   "basics": {
     "name": "James Choi",
     "location": {
-      "address": "12850 W State Road 84\nDavie, FL 33325",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
+      "address": "12850 W State Road 84",
+      "postalCode": "33325",
+      "city": "Davie",
+      "countryCode": "+1",
+      "region": "US"
     },
     "profiles": []
   },
   "work": [
     {
-      "company": "\"Self Employed\"",
+      "company": "Self Employed",
       "website": "",
       "position": "Freelance Web Developer",
       "startDate": "2016-04-01",
@@ -34,7 +34,7 @@
       "position": "IT Intern",
       "startDate": "2015-01-01",
       "endDate": "2015-05-01",
-      "summary": "First intern hired by the law firm's IT department.  Planned, designed, implemented and tested web application solutions.  Improved and updated law firm's current implementations.\n\n- Data serialization interfaces used by internal company software to consume data resources for business process using data that originates from external sources.\n\n- Implemented revamped \"Employee of the Month\" web application built using ASP.net MVC 5 and Angular.js which allowed company employees (searched via active directory) to nominate colleagues (typeahead via data from SQL Server) for \"Employee of the Month\" using updated modern UI powered by angular.js.  The application streamlined the monthly EOM voting procedures by automatic dispatch of emails containing vote summaries for the month to designated employees.\n\n- Wrote real-time web application in ASP.net MVC 5 using SignalR (websockets) and Angular.js for a  \"job ticketing\" system that allows members of the legal department to submit requests to document specialists who resolve the request after proofreading/processing provided document.",
+      "summary": "First intern hired by the law firm's IT department.  Implemented web application solutions.  Improved and updated law firm's current implementations.\n\n- Data serialization interfaces used by internal company software to consume data resources for business process using data that originates from external sources.\n\n- Implemented revamped \"Employee of the Month\" web application built using ASP.net MVC 5 and Angular.js which allowed company employees (searched via active directory) to nominate colleagues (typeahead via data from SQL Server) for \"Employee of the Month\" using updated modern UI powered by angular.js.  The application streamlined the monthly EOM voting procedures by automatic dispatch of emails containing vote summaries for the month to designated employees.\n\n- Wrote real-time web application in ASP.net MVC 5 using SignalR (websockets) and Angular.js for a  \"job ticketing\" system that allows members of the legal department to submit requests to document specialists who resolve the request after proofreading/processing provided document.",
       "highlights": []
     },
     {

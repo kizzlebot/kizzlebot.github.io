@@ -11,6 +11,19 @@
 }
 
 
+@mixin flex_config($justify:"", $align: "", $flow: ""){
+  display: flex;
+
+  @if $justify != "" {
+    justify-content: $justify;
+  }
+  @if $align != "" {
+    align-items: $align;
+  }
+  @if $flow != "" {
+    flex-flow: $flow;
+  }
+}
 
 .wrapper {
   $fam:'Roboto Slab', serif;
@@ -22,36 +35,47 @@
 
 }
 
-@mixin flex_config($justify:"", $align: ""){
-  display: flex;
-
-  @if $justify != "" {
-    justify-content: $justify;
-  }
-  @if $align != "" {
-    align-items: $align;
-  }
-}
 
 section {
+  // &:before {
+  //   content: "";
+  //   position: fixed;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: -1;
+  //
+  //   display: block;
+  //   // background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
+  //   width: 1200px;
+  //   height: 800px;
+  //
+  //
+  //   filter: blur(5px);
+  // }
+
   height: 100vh;
-
-  @include font_config(30px, 100);
-
   background-color: #22A7F0;
+  .container{
+    z-index:9;
+  }
+  .svg_background{
+    width:100%;
+    // height:100%;
+    position:absolute;
+    z-index:2;
+  }
 
   // display: flex;
   // justify-content: center;
   // align-items: center;
+  @include font_config(30px, 100);
   @include flex_config(center, center);
 
-  $colors: white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue, white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue;
+  $colors: white, #353251, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue, white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue;
+
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
       background: nth($colors, $i);
-      .container {
-        // paddding-left:100px;
-      }
     }
   }
 }
@@ -60,14 +84,17 @@ section {
 
 .nav {
   margin: 0 0 100px 30px;
+  z-index:10;
+
   &__wrapper {
     position: fixed;
     height: 100%;
     padding: 30px;
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
+    // display: flex;
+    // flex-flow: column nowrap;
+    // justify-content: flex-end;
+    @include flex_config(flex-end, "", column nowrap);
   }
 
 

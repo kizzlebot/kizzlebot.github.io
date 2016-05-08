@@ -21,9 +21,9 @@ export default class TOC extends React.Component {
     });
   }
   render(){
-    console.log(this.props.sections);
+  // console.log(this.props.sections);
     return (
-      <nav className="nav__wrapper" id="navbar-example">
+      <nav className="nav nav__wrapper" id="navbar-example">
         <ul className="nav">
           {this.props.sections.map((e, i) => {
             return (

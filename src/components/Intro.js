@@ -1,12 +1,17 @@
 import React from 'react';
+import mysvg from '../stylesheets/rocket.svg';
 var $ = require('jquery');
+
+
 
 
 
 export default class Intro extends React.Component {
   render(){
+    console.log(mysvg);
     return (
       <section className={`section`} id={this.props.id}>
+        <div className={'svg_background'} dangerouslySetInnerHTML={{__html: mysvg}} />
         <div className={'container'}>
           <div className={'row'}>
             <div className={'col-xs-offset-2 col-xs-10'}>

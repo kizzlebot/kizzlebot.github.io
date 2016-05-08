@@ -1,4 +1,3 @@
-
 import React from 'react';
 var $ = require('jquery');
 var resume = require('../resume/resume.json');
@@ -25,12 +24,12 @@ export default class MainApp extends React.Component {
     return (
       <div className="wrapper">
         <TOC sections={sections} />
-
-        {Object.keys(this.state).map((e, i) => {
+        <Intro key={`section${1}`} id={`section${1}`} resume={resume}/>
+        {/*{Object.keys(this.state).map((e, i) => {
           return (
-            <Intro key={`section${i+1}`} id={`section${i+1}`} />
+            <Intro key={`section${i+1}`} id={`section${i+1}`} resume={resume}/>
           )
-        })}
+        })}*/}
 
       </div>
     );
