@@ -36,7 +36,7 @@
 section {
   height: 100vh;
 
-  @include font_config(40px, 100);
+  @include font_config(30px, 100);
 
   background-color: #22A7F0;
 
@@ -48,7 +48,10 @@ section {
   $colors: white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue, white, #F64747, #22A7F0, #F9690E, #9B59B6, #03C9A9, #ffcc00, dodgerblue;
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
-      background: nth($colors, $i)
+      background: nth($colors, $i);
+      .container {
+        // paddding-left:100px;
+      }
     }
   }
 }
@@ -73,21 +76,21 @@ section {
     transition: all 0.15s ease-out;
   }
   &__title {
-    @include font_config(32px, 300);
+    @include font_config(22px, 300);
     // font-size: 32px;
     // font-weight: 300;
     margin: 0 0 0.25em;
-    width: 300px;
+    // width: 300px;
     height: 0;
     overflow: hidden;
     opacity: 0;
     transition: height 0.3s ease-out, opacity 0.2s ease-out;
   }
   &__body {
-    @include font_config(18px, 100);
+    @include font_config(12px, 100);
     // font-size: 18px;
     // font-weight: 100;
-    width: 300px;
+    // width: 300px;
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -97,7 +100,8 @@ section {
   li {
     position: relative;
     transition: all 0.3s ease-out;
-    margin-bottom: 1em;
+    max-width:120px;
+    // margin-bottom: 1em;
 
     &:after {
       content: '';
@@ -139,13 +143,13 @@ section {
       padding-left: 1em;
 
       &:after {
-        width: 35px;
+        width: 25px;
         height: 400px;
         top: 35px;
       }
 
       .nav__counter {
-        font-size: 48px;
+        font-size: 28px;
       }
       .nav__title {
         height: 40px;
