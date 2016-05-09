@@ -3,6 +3,7 @@ var $ = require('jquery');
 var resume = require('../resume/resume.json');
 
 import TOC from './TOC';
+import Experience from './Experience';
 import Intro from './Intro';
 
 
@@ -26,9 +27,11 @@ export default class MainApp extends React.Component {
         <TOC sections={sections} />
         <Intro key={`section${1}`} id={`section${1}`} resume={resume}/>
         {/*{Object.keys(this.state).map((e, i) => {
-          return (
-            <Intro key={`section${i+1}`} id={`section${i+1}`} resume={resume}/>
-          )
+          return (*/}
+            
+            <Experience key={`section2`} id={`section${2}`} resume={resume}/>
+
+          {/*)
         })}*/}
 
       </div>

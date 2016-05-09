@@ -44,6 +44,7 @@ var config = {
 			{ test: /\.jpg/, 																					loader: "url-loader?limit=10000&mimetype=image/jpg" },
 			{ test: /\.png/, 																					loader: "url-loader?limit=10000&mimetype=image/png" },
 			{ test: require.resolve('jquery'),                        loader: 'expose?$!expose?jQuery' },
+			{ test: require.resolve('snapsvg'), 											loader: 'imports-loader?this=>window,fix=>module.exports=0' },
 			{ test: /bootstrap\/\dist\/js\//,                         loader: 'imports?jQuery=jquery' }
 		]
 	},
