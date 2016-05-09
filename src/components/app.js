@@ -7,34 +7,31 @@ import Experience from './Experience';
 import Intro from './Intro';
 import Activity from './Activity';
 
-export default class MainApp extends React.Component {
+export default class App extends React.Component {
   constructor(props, context){
     super(props, context);
-    this.state = {
-      basics:[], education:[], skills: []
-    };
   }
+  static childContextTypes = {
+    resume: React.PropTypes.object
+  };
+  getChildContext () {
+    return {resume:resume};
+  }
+
+
   componentWillMount(){
     this.setState(resume);
   }
 
   render() {
-
     var sections = Object.keys(resume).reduce((prev, curr) => prev.concat([{ title:curr }]), []);
 
     return (
       <div className="wrapper">
         <TOC sections={sections} />
-        <Intro key={`section${1}`} id={`section${1}`} resume={resume}/>
-        {/*{Object.keys(this.state).map((e, i) => {
-          return (*/}
-
-            <Experience key={`section2`} id={`section${2}`} resume={resume}/>
-            <Activity key={`section3`} id={`section${3}`} resume={resume}/>
-
-          {/*)
-        })}*/}
-
+        <Intro key={`section${1}`} id={`section${1}`} />
+        <Experience key={`section2`} id={`section${2}`} />
+        <Activity key={`section3`} id={`section${3}`} />
       </div>
     );
   }

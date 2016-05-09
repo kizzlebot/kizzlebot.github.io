@@ -1,45 +1,42 @@
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-console.log(require.resolve('./node_modules/guaw-dev/dist/js/jquery.guaw.min.js'));
 var config = {
-	// devServer: {
-	// 	contentBase: "./public",
-	// 	noInfo: true, //  --no-info option
-	// 	hot: true,
-	// 	inline: true
-	// },
-	//
-	//
+	devtool: process.env.WEBPACK_DEVTOOL || 'eval',
+
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
 		'webpack/hot/only-dev-server',
-		'./src/index.js' // Your appʼs entry point
+		'./src/index.js' 																 // Your appʼs entry point
 	],
-	devtool: process.env.WEBPACK_DEVTOOL || 'eval',
+
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',
 		publicPath:'/public/'
 	},
+
 	resolve: {
 		extensions: ['', '.js', '.jsx'],
+		moduleDirectories:['node_modules'],
 		alias:{
       bootstrap:`${__dirname}/node_modules/bootstrap`,
 			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist/js/jquery.guaw.min.js`
     }
 	},
+
 	module: {
 		loaders: [
       { test: /\.(js|jsx)*$/,                                   loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'src')},
 			{ test: /\.css$/, 																				loader: 'style-loader!css-loader' },
+			// { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
       { test: /\.less$/,                                        loaders: ['style', 'css', 'less'] },
       { test: /\.scss$/,                                        loaders: ['style', 'css', 'sass'] },
 			{ test: /\.json$/,                                        loaders: ['json'] },
 			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, 										loader: "file" },
 			{ test: /\.(woff|woff2)$/, 																loader: "url?prefix=font/&limit=5000" },
 			{ test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, 										loader: "url?limit=10000&mimetype=application/octet-stream" },
-			// { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, 										loader: "url?limit=10000&mimetype=image/svg+xml" },
 			{ test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, 										loader: 'svg-inline'},
 			{ test: /\.gif/, 																					loader: "url-loader?limit=10000&mimetype=image/gif" },
 			{ test: /\.jpg/, 																					loader: "url-loader?limit=10000&mimetype=image/jpg" },
@@ -53,12 +50,18 @@ var config = {
 
 
 	plugins: [
-		new webpack.ProvidePlugin({
+		// new ExtractTextPlugin('style.css', { allChunks: true }),
+		new webpack.DefinePlugin({
 			'__dirname':__dirname
 		}),
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin()
-	]
+	],
+
+	sassLoader: {
+		includePaths: [path.resolve(__dirname, "./src/stylesheets")]
+	}
+
 };
 
 

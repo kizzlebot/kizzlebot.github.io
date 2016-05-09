@@ -1,17 +1,19 @@
 import React from 'react';
-
 var $ = require('jquery');
+var Snap = require('snapsvg');
 
-var SnapSVG = require('snapsvg');
-var Snap = SnapSVG ;
 import mysvg from '../../stylesheets/rocket.svg';
+
+
+
+
 
 export default class SpaceShip extends React.Component{
   componentWillReceiveProps(nextProps){
-    SnapSVG('#svg2').attr({width:nextProps.width, height:nextProps.height})
+    Snap('#svg2').attr({width:nextProps.width, height:nextProps.height})
   }
   componentDidMount(){
-    var s = SnapSVG('#svg2');
+    var s = Snap('#svg2');
     s.attr({width:this.props.width, height:this.props.height});
 
     var spaceship = s.select('#rocket');

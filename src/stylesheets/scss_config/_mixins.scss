@@ -1,0 +1,53 @@
+@mixin font_config($size:-1, $weight:-1, $family:""){
+  @if $size > 0 {
+    font-size: $size;
+  }
+  @if $weight > 0 {
+    font-weight: $weight;
+  }
+  @if $family != "" {
+    font-family: $family;
+  }
+}
+
+
+@mixin flex_config($justify:"", $align: "", $flow: ""){
+  display: flex;
+
+  @if $justify != "" {
+    justify-content: $justify;
+  }
+  @if $align != "" {
+    align-items: $align;
+  }
+  @if $flow != "" {
+    flex-flow: $flow;
+  }
+}
+
+/* http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox */
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}

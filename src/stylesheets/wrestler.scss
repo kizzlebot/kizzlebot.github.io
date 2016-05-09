@@ -1,0 +1,339 @@
+@import "scss_config/mixins";
+@import "scss_config/variables";
+
+
+.w {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.w-body {
+  @include animation(1.3s ease-in-out infinite alternate bodyStep);
+
+  background-color: $color_mandy;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  margin: -80px 0 0 -80px;
+  position: absolute;
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+
+.w-body-skin {
+  animation: 0.07s ease-in-out infinite alternate skinShake;
+  margin: -20px auto 0;
+  &, &::before, &::after {
+    background-color: $color_raffia;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: block;
+  }
+  &::before, &::after {
+    border-radius: 0 0 50% 50%;
+    content: '';
+    transform: translateY(20px);
+  }
+  &::before { margin-left: -90px; }
+  &::after { margin: -85px 0 0 90px; }
+}
+
+
+
+.w-body-nipples {
+  @include animation(0.07s ease-in-out infinite alternate nipplesShake);
+  &::after {
+    content: '';
+    margin-left: 56px;
+    transform: translateY(0);
+  }
+  &, &::after {
+    background-color: $color_mona_lisa;
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 10px;
+  }
+}
+
+.w-head {
+  animation: 1.3s ease-in-out infinite alternate bodyStep;
+  &, &::before {
+    background-color: $color_raffia;
+    display: block;
+    height: 30px;
+    margin: -106px 0 0 -17px;
+    position: absolute;
+    width: 34px;
+    z-index: 1;
+  }
+  &::before {
+    background-color: $color_mandy;
+    border-radius: 50% 50% 0 0;
+    content: '';
+    height: 40px;
+    margin: -27px 0 0;
+  }
+}
+
+
+.w-eye {
+  background-color: $color_claret;
+  border: 2px solid $color_raffia;
+  border-radius: 0 8px 6px 70%;
+  display: block;
+  height: 8px;
+  margin: -11px 0 0 1px;
+  position: absolute;
+  width: 11px;
+  z-index: 1;
+  &::after {
+    background-color: $color_raffia;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 1px 0 0 4px;
+    width: 5px;
+  }
+}
+.w-eye_right {
+  margin-left: 18px;
+  transform: scaleX(-1);
+}
+
+.w-arm {
+  animation: 1.3s ease-in-out infinite alternate bodyStep;
+  margin: -63px 0 0 -80px;
+  position: absolute;
+  &::before {
+    animation: 0.07s ease-in-out infinite alternate armShake;
+    border-radius: 30px 30px 0 0;
+    background-color: $color_akaroa;
+    content: '';
+    height: 80px;
+    margin: -10px 0 0 -22px;
+    position: absolute;
+    transform: rotate(31deg);
+    transform-origin: bottom;
+    width: 50px;
+  }
+  &::after {
+    content: '';
+    background-color: $color_raffia;
+    border-radius: 3px 0 30px 30px;
+    height: 85px;
+    margin: 54px 0 0 -55px;
+    position: absolute;
+    transform: rotate(49deg);
+    width: 50px;
+  }
+}
+.w-arm_right {
+  animation: 1.3s ease-in-out infinite alternate bodyStepMirror;
+  margin-left: 80px;
+  &::before {
+    animation-delay: 0.07s;
+  }
+}
+
+
+
+.w-leg {
+  animation: 1.3s ease-in infinite alternate legShift;
+  margin: 49px 0 0 -52px;
+  position: absolute;
+}
+.w-leg-top {
+  animation: 1.3s ease-in infinite alternate legTop;
+  background-color: $color_raffia;
+  height: 50px;
+  position: absolute;
+  width: 45px;
+}
+.w-leg-bottom {
+  animation: 1.3s ease-in infinite alternate legBottom;
+  background-color: $color_mandy;
+  height: 70px;
+  margin: 40px 0 0 0px;
+  position: absolute;
+  width: 45px;
+  &::before {
+    animation: 1.3s ease-in infinite alternate bootsBackground;
+    background-color: $color_mandy;
+    border-radius: 50% 0 0 0;
+    content: '';
+    height: 10px;
+    margin: 60px 0 0 -20px;
+    position: absolute;
+    width: 20px;
+  }
+}
+
+.w-leg_right {
+  animation: 1.3s ease-in -1.3s infinite alternate legShiftScale;
+  margin-left: 52px;
+  transform: scaleX(-1);
+}
+.w-leg_right .w-leg-top,
+.w-leg_right .w-leg-bottom,
+.w-leg_right .w-leg-bottom::before {
+  animation-delay: 1.3s;
+}
+
+.w-shoelace{
+  &::after {
+    background-color: $yellow;
+    border-radius: 2px;
+    height: 2px;
+    margin: 15px 0 0 1px;
+    transform: rotate(45deg);
+    width: 12px;
+  }
+  &::after {
+    content: '';
+    margin: 0;
+    position:absolute;
+    transform: rotate(90deg);
+  }
+}
+
+
+.w-heel {
+  bottom: 0;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 20px;
+  &::after {
+    background-color: $yellow;
+    border-radius: 50%;
+    content: '';
+    height: 40px;
+    position: absolute;
+    width: 40px;
+  }
+}
+
+
+
+
+@include keyframes(legShift){
+  $x:      0, 0, 0, 0, 20px;
+  $y:      0, 0, 0, -20px, 0;
+
+  @for $i from 1 through length($x){
+    $p: ($i - 1) * 25;
+    #{$p}% { transform: translate(nth($x, $i), nth($y, $i)); }
+  }
+}
+
+@include keyframes(legShiftScale){
+  $x:      0, 0, 0, 0, -20px;
+  $y:      0, 0, 0, -20px, 0;
+  $scale: -1, -1, -1, -1, -1;
+  $zindex: 0, 0, 0, 0, -1;
+
+  @for $i from 1 through length($x){
+    $p: ($i - 1) * 25;
+
+    #{$p}%{
+      transform: translate(nth($x, $i), nth($y, $i)) scaleX(nth($scale, $i));
+      z-index: nth($zindex, $i);
+    }
+  }
+}
+
+
+@include keyframes(legTop){
+  $background_colors: $color_raffia, $color_raffia, $color_raffia, $color_raffia, #b8b092;
+  $rotation:             0deg,    0deg,    0deg,   30deg,    0deg;
+
+  @for $i from 1 through length($background_colors){
+    $p: ($i - 1) * 25;
+
+    #{$p}%{
+      background-color: nth($background_colors, $i);
+      transform: rotate(nth($rotation, $i));
+    }
+  }
+}
+
+@include keyframes(legBottom){
+  $background_colors: $color_mandy, $color_mandy, $color_mandy, $color_mandy, #ba3b56;
+  $transform_x: 0, 0, 0, 0px, 0;
+  $transform_y: 0, 0, 0, -15px, 0;
+  $transform_rotation: 0deg, 0deg, 0deg, -20deg, 0deg;
+
+  @for $i from 1 through length($background_colors){
+    $p: ($i - 1) * 25;
+
+    #{$p}%{
+      background-color: nth($background_colors, $i);
+      transform: translate(nth($transform_x, $i), nth($transform_y, $i)) rotate(nth($transform_rotation, $i));
+    }
+  }
+}
+
+
+@include keyframes(bootsBackground){
+  $background_colors: $color_mandy, $color_mandy, $color_mandy, $color_mandy, #ba3b56;
+
+  @for $i from 1 through length($background_colors){
+    $p: ($i - 1) * 25;
+    #{$p}%{
+      background-color: nth($background_colors, $i);
+    }
+  }
+}
+
+@include keyframes(bodyStep){
+  $x: -22px, -11px, 0, 11px, 22px;
+  $y:  0, -15px, 0, -15px, 0;
+  $z:  0, 0, 0, 0, 0;
+
+  @for $i from 1 through length($x){
+    $p: ($i - 1) * 25;
+    #{$p}%{
+      transform: translate3d(nth($x, $i), nth($y, $i), nth($z, $i));
+    }
+  }
+}
+
+@include keyframes(bodyStepMirror){
+  $x: -22px, -11px, 0, 11px, 22px;
+  $y:  0, -15px, 0, -15px, 0;
+  $z:  0, 0, 0, 0, 0;
+  $scale: -1, -1, -1, -1, -1;
+
+  @for $i from 1 through length($x){
+    $p: ($i - 1) * 25;
+    #{$p}%{
+      transform: translate3d(nth($x, $i), nth($y, $i), nth($z, $i)) scaleX(nth($scale, $i));
+    }
+  }
+}
+
+
+
+@keyframes skinShake {
+  from { transform: translateX(-3px); }
+  to { transform: translateX(3px); }
+}
+
+@keyframes nipplesShake {
+  from { transform: translate(44px, -25px); }
+  to { transform: translate(50px, -25px); }
+}
+
+@keyframes armShake {
+  from { transform: rotate(28deg); }
+  to { transform: rotate(32deg); }
+}

@@ -30,3 +30,6 @@ export default class Intro extends React.Component {
     )
   }
 }
+Intro.contextTypes = {
+  resume: React.PropTypes.object
+}
