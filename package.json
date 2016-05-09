@@ -29,6 +29,7 @@
     "bootstrap": "3.3.5",
     "bootstrap-webpack": "0.0.5",
     "eslint": "^2.9.0",
+    "guaw-dev": "git+https://github.com/thebinarypenguin/guaw.git",
     "jade": "^1.11.0",
     "jquery": "^2.2.3",
     "json": "^9.0.3",
