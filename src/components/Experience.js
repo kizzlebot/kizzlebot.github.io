@@ -1,7 +1,8 @@
 import React from 'react';
 var $ = require('jquery');
+var moment = require('moment');
 import Wrestler from './animation/Wrestler';
-// var Timesheet = require('./animation/timesheet');
+
 
 
 export default class Experience extends React.Component {
@@ -9,11 +10,6 @@ export default class Experience extends React.Component {
 
   }
   render(){
-      // var data = [
-      //   ['2002', '09/2002', 'A freaking awesome time', 'lorem'],
-      //   ['02/2005', '05/2006', 'Enjoyed those times as well', 'ipsum'],
-      //   ['09/2008', '06/2010', 'FRINGE #1 & #2', 'ipsum']];
-
     return (
       <section className={`section`} id={this.props.id}>
         <div className={'container'}>
@@ -24,12 +20,12 @@ export default class Experience extends React.Component {
             <div className={'col-xs-offset-2 col-xs-12'}>
               {this.props.resume.work.map((e) => {
                 return (
-                  <ul key={e.company}>
+                  <ul key={e.company} className='work_experience'>
                     <li>
                       {e.company}
-                      <ul>
+                      <ul className='work_experience_info'>
                         <li>{e.position}</li>
-                        <li>{e.startDate} - {e.endDate || 'current'}</li>
+                        <li>{moment(e.startDate).format('MM/YYYY')} - {(e.endDate)? moment(e.endDate).format('MM/YYYY') : 'current'}</li>
                       </ul>
                     </li>
                   </ul>

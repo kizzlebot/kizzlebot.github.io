@@ -21,7 +21,6 @@ export default class Intro extends React.Component {
               <h1><u>{''}</u></h1>
               <h2>{'James Choi'}</h2>
               <h4><span>{'Computer Engineer'}</span>, <span>{'Software Developer'}</span></h4>
-              {/*<p><small className='text-small'>{'but more like'}</small></p>*/}
               <h4><span>{'Full stack developer'}</span>, <span>{'Web application developer'}</span></h4>
             </div>
           </div>
