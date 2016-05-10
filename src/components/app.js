@@ -9,6 +9,7 @@ import Experience from './Experience';
 import Intro from './Intro';
 import Activity from './Activity';
 import Skills from './Skills';
+import Tech from './Tech';
 
 
 
@@ -30,7 +31,11 @@ export default class App extends React.Component {
   }
 
   render() {
-    var sections = Object.keys(resume).reduce((prev, curr) => prev.concat([{ title:curr }]), []);
+    var excludes = ['references', 'languages'];
+    var sections = Object.keys(resume).reduce((prev, curr) => {
+      if (curr[0] == '_' || excludes.indexOf(curr) != -1) return prev ;
+      return prev.concat([{ title:curr, caption:resume._captions[curr] }]);
+    }, []).concat([{title:'Built using', caption: 'Technologies used'}]);
 
     return (
       <div className="wrapper">
@@ -39,6 +44,7 @@ export default class App extends React.Component {
         <Experience key={`section2`} id={`section${2}`} resume={resume}/>
         <Activity key={`section3`} id={`section${3}`} />
         <Skills key={`section4`} id={`section${4}`} />
+        <Tech key={`section5`} id={`section${5}`} />
       </div>
     );
   }

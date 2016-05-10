@@ -2,7 +2,10 @@
 @import "scss_config/variables";
 
 
-
+.react-logo-svg{
+  width:200px;
+  height:200px;
+}
 .wrapper {
   @include font_config(0, 300, $wrapper_font_family);
 
@@ -133,7 +136,7 @@ section {
         overflow: visible;
       }
       .nav__body {
-        height: 100px;
+        min-height: 50px;
         opacity: 1;
         overflow: visible;
       }

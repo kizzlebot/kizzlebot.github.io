@@ -5,6 +5,7 @@ var $ = require('jquery');
 
 export default class TOC extends React.Component {
   componentDidMount(){
+
     this.props.sections.forEach((e, i) => {
       $(this.refs[`toc-${i}`]).click(function(){
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
@@ -22,6 +23,7 @@ export default class TOC extends React.Component {
   }
   render(){
   // console.log(this.props.sections);
+    
     return (
       <nav className="nav nav__wrapper" id="navbar-example">
         <ul className="nav">

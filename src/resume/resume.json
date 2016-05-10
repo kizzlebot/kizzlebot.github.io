@@ -1,4 +1,10 @@
 {
+  "_captions":{
+    "basics":"General information",
+    "work": "Past job experiences",
+    "education":"Academic institutions attended",
+    "skills": "My skill set"
+  },
   "basics": {
     "name": "James Choi",
     "location": {
