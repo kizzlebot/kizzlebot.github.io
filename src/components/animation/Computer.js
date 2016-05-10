@@ -4,7 +4,7 @@ import InlineCss from "react-inline-css";
 var $ = require('jquery');
 require('typed.js');
 
-var style = require('!raw!sass!../../stylesheets/computer.scss');
+var style = require('!raw!sass!stylesheets/computer.scss');
 
 
 export default class Computer extends React.Component{
@@ -16,24 +16,7 @@ export default class Computer extends React.Component{
     };
   }
   componentDidMount(){
-    // this.state.interval = setInterval(() => {
-    //   if (this.state.terminal.length == 0) return clearInterval(this.state.interval);
-    //
-    //   var currCmd = this.state.terminal[0];
-    //   if (currCmd.cmd == '') {
-    //     // TODO: print the output key
-    //     var toPrintOutput = this.state.terminal.splice(0, 1);
-    //   }
-    //   else{
-    //     var c = currCmd.cmd.charAt(0);
-    //     this.state.terminal[0] = this.state.terminal[0].slice(0);
-    //     this.setState(this.state, () => {
-    //
-    //     })
-    //   }
-    // },1000);
-    //
-    // this.setState(this.state);
+
   }
   render(){
     return (

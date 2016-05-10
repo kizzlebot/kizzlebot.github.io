@@ -23,7 +23,8 @@ var config = {
 		alias:{
       bootstrap:`${__dirname}/node_modules/bootstrap`,
 			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist/js/jquery.guaw.min.js`,
-			'typed.js':`${__dirname}/node_modules/typed.js/js/typed.js`
+			'typed.js':`${__dirname}/node_modules/typed.js/js/typed.js`,
+			'stylesheets':`${__dirname}/src/stylesheets`
     }
 	},
 

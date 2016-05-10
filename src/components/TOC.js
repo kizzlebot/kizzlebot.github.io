@@ -33,8 +33,7 @@ export default class TOC extends React.Component {
                   <span className='span_title'> {e.title}</span>
                   <h3 className="nav__title">{`${e.title}`}</h3>
                   <p className="nav__body">
-                    <strong>Timeline-style navigation</strong>.
-                      Scroll down to see what happens, or click on a number in the nav.
+                    {e.caption}
                   </p>
                 </a>
               </li>

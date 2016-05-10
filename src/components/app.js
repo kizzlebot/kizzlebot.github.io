@@ -36,7 +36,7 @@ export default class App extends React.Component {
       <div className="wrapper">
         <TOC sections={sections} />
         <Intro key={`section${1}`} id={`section${1}`} />
-        <Experience key={`section2`} id={`section${2}`} />
+        <Experience key={`section2`} id={`section${2}`} resume={resume}/>
         <Activity key={`section3`} id={`section${3}`} />
         <Skills key={`section4`} id={`section${4}`} />
       </div>

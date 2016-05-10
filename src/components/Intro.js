@@ -18,11 +18,11 @@ export default class Intro extends React.Component {
         <div className={'container'}>
           <div className={'row'}>
             <div className={'col-xs-offset-2 col-xs-10'}>
-              <h1><u>{'Who I be?'}</u></h1>
+              <h1><u>{''}</u></h1>
               <h2>{'James Choi'}</h2>
-              <h3><span>{'Computer Engineer'}</span>, <span>{'Software Developer'}</span></h3>
-              <p><small className='text-small'>{'but more like'}</small></p>
-              <h3><span>{'Full stack developer'}</span>, <span>{'Web application developer'}</span></h3>
+              <h4><span>{'Computer Engineer'}</span>, <span>{'Software Developer'}</span></h4>
+              {/*<p><small className='text-small'>{'but more like'}</small></p>*/}
+              <h4><span>{'Full stack developer'}</span>, <span>{'Web application developer'}</span></h4>
             </div>
           </div>
         </div>
