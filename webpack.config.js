@@ -22,7 +22,7 @@ var config = {
 		moduleDirectories:['node_modules'],
 		alias:{
       bootstrap:`${__dirname}/node_modules/bootstrap`,
-			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist/js/jquery.guaw.min.js`,
+			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist`,
 			'typed.js':`${__dirname}/node_modules/typed.js/js/typed.js`,
 			'stylesheets':`${__dirname}/src/stylesheets`
     }
@@ -45,8 +45,8 @@ var config = {
 			{ test: /\.png/, 																					loader: "url-loader?limit=10000&mimetype=image/png" },
 			{ test: require.resolve('jquery'),                        loader: 'expose?$!expose?jQuery' },
 			{ test: require.resolve('snapsvg'), 											loader: 'imports-loader?this=>window,fix=>module.exports=0' },
-			{ test: require.resolve('./node_modules/guaw-dev/dist/js/jquery.guaw.min.js'), 								loader: 'imports-loader?this=>window,fix=>module.exports=0' },
-			{ test: require.resolve('./node_modules/typed.js/js/typed.js'), 															loader: 'imports-loader?this=>window,fix=>module.exports=0' },
+			// { test: require.resolve('./node_modules/guaw-dev/dist/js/jquery.guaw.min.js'), 								loader: 'imports-loader?this=>window,fix=>module.exports=0' },
+			// { test: require.resolve('./node_modules/typed.js/js/typed.js'), 															loader: 'imports-loader?this=>window,fix=>module.exports=0' },
 			{ test: /bootstrap\/\dist\/js\//,                         loader: 'imports?jQuery=jquery' }
 		]
 	},

@@ -1,4 +1,5 @@
 let React = require('react');
+let ReactDOM = require('react-dom');
 
 const data = {
   path1: {
@@ -27,6 +28,10 @@ let animate = function(handle) {
   });
 };
 
+
+
+
+
 class ReactLogo extends React.Component {
   constructor(props) {
     super(props);
@@ -43,12 +48,12 @@ class ReactLogo extends React.Component {
     }
 
     Object.keys(data).map(ref => {
-      this[ref] = React.findDOMNode(this.refs[ref]);
+      this[ref] = ReactDOM.findDOMNode(this.refs[ref]);
     });
   }
 
   getPathTotalLength() {
-    return this.pathTotalLength || React.findDOMNode(this.refs.path1).getTotalLength();
+    return this.pathTotalLength || ReactDOM.findDOMNode(this.refs.path1).getTotalLength();
   }
 
   tweenLoop() {

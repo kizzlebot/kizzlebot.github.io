@@ -5,11 +5,7 @@ var resume = require('../resume/resume.json');
 import TOC from './TOC';
 
 
-import Experience from './Experience';
-import Intro from './Intro';
-import Activity from './Activity';
-import Skills from './Skills';
-import Tech from './Tech';
+ import {Experience, Intro, Activity, Skills, Tech} from './sections';
 
 
 

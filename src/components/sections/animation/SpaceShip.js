@@ -2,7 +2,7 @@ import React from 'react';
 var $ = require('jquery');
 var Snap = require('snapsvg');
 
-import mysvg from '../../stylesheets/rocket.svg';
+import mysvg from 'stylesheets/rocket.svg';
 
 
 
