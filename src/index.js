@@ -2,7 +2,7 @@
 require('expose?$!expose?jQuery!jquery');
 require('bootstrap-webpack');
 require('./stylesheets/styles.scss');
-require('./stylesheets/wrestler.scss');
+// require('./stylesheets/wrestler.scss');
 require(`guaw-dev/dist/css/jquery.guaw.min.css`);
 
 /* SVG Animation Requirements */

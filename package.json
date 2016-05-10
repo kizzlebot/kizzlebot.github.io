@@ -43,6 +43,7 @@
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "react-inline-css": "^2.1.1",
+    "react-logo": "^1.0.7",
     "react-motion": "^0.4.3",
     "react-motion-ui-pack": "^0.7.3",
     "react-redux": "^4.4.2",
@@ -55,7 +56,8 @@
     "redux-devtools-log-monitor": "^1.0.4",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1",
-    "snapsvg": "^0.4.0"
+    "snapsvg": "^0.4.0",
+    "typed.js": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",

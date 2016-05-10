@@ -1,9 +1,10 @@
 import React from 'react';
+
 var $ = require('jquery');
-import Wrestler from './animation/Wrestler';
+import Computer from './animation/Computer';
 
 
-export default class Experience extends React.Component {
+export default class Skills extends React.Component {
   render(){
     return (
       <section className={`section`} id={this.props.id}>
@@ -11,16 +12,11 @@ export default class Experience extends React.Component {
           <div className={'row'}>
             <div className={'col-xs-offset-2 col-xs-10'}>
               <h1></h1>
-              <Wrestler />
+              <Computer />
             </div>
           </div>
         </div>
       </section>
     )
   }
-}
-
-
-Experience.contextTypes = {
-  resume: React.PropTypes.object
 }
