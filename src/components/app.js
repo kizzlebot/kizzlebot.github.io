@@ -5,7 +5,7 @@ var resume = require('../resume/resume.json');
 import TOC from './TOC';
 
 
- import {Experience, Intro, Activity, Skills, Tech} from './sections';
+import {Experience, Intro, Education, Skills, Tech} from './sections';
 
 
 
@@ -35,10 +35,11 @@ export default class App extends React.Component {
 
     return (
       <div className="wrapper">
+
         <TOC sections={sections} />
         <Intro key={`section${1}`} id={`section${1}`} />
-        <Experience key={`section2`} id={`section${2}`} resume={resume}/>
-        <Activity key={`section3`} id={`section${3}`} />
+        <Experience key={`section2`} id={`section${2}`} />
+        <Education key={`section3`} id={`section${3}`} />
         <Skills key={`section4`} id={`section${4}`} />
         <Tech key={`section5`} id={`section${5}`} />
       </div>

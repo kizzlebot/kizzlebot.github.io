@@ -39,6 +39,7 @@
     "jsx-loader": "^0.13.2",
     "less": "^2.7.0",
     "moment": "^2.13.0",
+    "node-bourbon": "^4.2.8",
     "node-libs-browser": "1.0.0",
     "node-sass": "^3.7.0",
     "react": "^0.14.8",

@@ -1,7 +1,21 @@
+@import "bourbon";
 @import "scss_config/mixins";
 @import "scss_config/variables";
 
-
+@mixin custom_list(){
+  & {
+    list-style-type: none;
+    small{
+      font-size:12px;
+    }
+  }
+  ul{
+    & > li{
+      // list-style-type: none;
+      font-size:14px;
+    }
+  }
+}
 
 
 .wrapper {
@@ -15,29 +29,34 @@
     width:200px;
     height:200px;
   }
-
-  .work_experience {
-    & {
-      list-style-type: none;
-    }
-
-    .work_experience_info{
-      font-size:10px;
-    }
+  .work_experience, .education {
+    @include custom_list();
+    // & {
+    //   list-style-type: none;
+    // }
+    // ul{
+    //   & > li{
+    //     // list-style-type: none;
+    //     font-size:12px;
+    //   }
+    // }
   }
 
-  & > section {
 
-    height: 100vh;
+
+  & > section {
+    transition:all 0.5s ease-in-out;
+    min-height: 100vh;
     background-color: #22A7F0;
     .container{ z-index:9; }
     .svg_background{
-      width:100%;
       position:absolute;
       z-index:2;
 
       margin: 0 auto 50px auto;
     }
+
+
 
     @include font_config(25px, 100);
     @include flex_config(center, center);
@@ -45,16 +64,14 @@
 
 
     @for $i from 1 through length($section_colors) {
-      &:nth-child(#{$i}) {
-        background: nth($section_colors, $i);
-      }
+      &:nth-child(#{$i}) { background: nth($section_colors, $i); }
     }
   }
 
 
 
   .nav {
-    margin: 0 0 100px 30px;
+    margin: 0 0 0 20px;
     z-index:10;
 
     &__wrapper {

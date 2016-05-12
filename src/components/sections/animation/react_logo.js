@@ -41,44 +41,29 @@ class ReactLogo extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.animation) {
-      animate(()=> {
-        this.tweenLoop();
-      });
-    }
-
-    Object.keys(data).map(ref => {
-      this[ref] = ReactDOM.findDOMNode(this.refs[ref]);
-    });
+    if (this.props.animation) animate( () => this.tweenLoop() );
+    Object.keys(data).map(ref => this[ref] = this.refs[ref]);
   }
 
   getPathTotalLength() {
-    return this.pathTotalLength || ReactDOM.findDOMNode(this.refs.path1).getTotalLength();
+    return this.pathTotalLength || this.refs.path1.getTotalLength();
   }
 
   tweenLoop() {
     this.current = this.current || 0;
     this.pathTotalLength = this.getPathTotalLength();
 
-    if (this.current >= this.pathTotalLength) {
-      this.current = 0;
-    }
-    this.current += this.pathTotalLength / this.props.duration;
+    this.current = this.pathTotalLength / this.props.duration + ((this.current >= this.pathTotalLength) ? 0 : this.current);
     this.setState({
       length: this.current
     });
   }
 
   getTransforms() {
-
-    if (!this.refs.path1) {
-      return [];
-    }
-
-    return Object.keys(data).map(ref => {
+    return (this.refs.path1) ? Object.keys(data).map(ref => {
       let pos = this[ref].getPointAtLength(this.state.length);
       return `translate(${pos.x}px, ${pos.y}px)`;
-    });
+    }) : []
   }
 
   render() {

@@ -2,21 +2,15 @@ import React from 'react';
 
 var $ = require('jquery');
 import Computer from './animation/Computer';
-
+import SectionWrap from './SectionWrap';
 
 export default class Skills extends React.Component {
   render(){
     return (
-      <section className={`section`} id={this.props.id}>
-        <div className={'container'}>
-          <div className={'row'}>
-            <div className={'col-xs-offset-2 col-xs-10'}>
-              <h1></h1>
-              <Computer />
-            </div>
-          </div>
-        </div>
-      </section>
+      <SectionWrap {...this.props}>
+        <h1></h1>
+        <Computer />
+      </SectionWrap>
     )
   }
 }

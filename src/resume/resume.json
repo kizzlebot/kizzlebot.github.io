@@ -36,7 +36,7 @@
     },
     {
       "company": "Lowndes, Drosdick, Doster, Kantor & Reed, P.A.",
-      "website": "",
+      "website": "http://lowndes-law.com",
       "position": "IT Intern",
       "startDate": "2015-01-01",
       "endDate": "2015-05-01",
@@ -45,16 +45,18 @@
     },
     {
       "company": "Lockheed Martin",
-      "website": "",
+      "website": "http://lockheedmartin.com",
       "position": "Work Experience Student",
       "startDate": "2014-09-01",
       "endDate": "2015-02-01",
-      "summary": "UCF student contracted to work in UCF's Work Experience Program in cooperation with Lockheed Martin.  Redesigned Mechanical Engineering department's intranet homepage using Sharepoint and Angular.js.",
-      "highlights": []
+      "summary": "UCF Work Experience Program in cooperation with Lockheed Martin.",
+      "highlights": [
+        "Developed SPA using Angular.js and foundation.css redesign of Mechanical Engineering department intranet homepage using Sharepoint."
+      ]
     },
     {
       "company": "Broward College",
-      "website": "",
+      "website": "http://ucl.broward.edu",
       "position": "Learning Resource Center",
       "startDate": "2011-01-01",
       "endDate": "2012-01-01",
@@ -64,22 +66,22 @@
   ],
   "education": [
     {
+      "institution": "University of Central Florida",
+      "gpa": "3.2",
+      "courses": [],
+      "startDate": "2012-01-01",
+      "endDate": "2016-05-10",
+      "area": "Computer Engineering",
+      "studyType": "BS"
+    },
+    {
       "institution": "Broward Community College",
-      "gpa": "",
+      "gpa": "3.7",
       "courses": [],
       "startDate": "2009-01-01",
       "endDate": "2012-01-01",
-      "area": "",
-      "studyType": "Associate's Degree"
-    },
-    {
-      "institution": "University of Central Florida",
-      "gpa": "",
-      "courses": [],
-      "startDate": "2012-01-01",
-      "endDate": "2016-01-01",
-      "area": "",
-      "studyType": "Bachelor’s Degree"
+      "area": "Engineering",
+      "studyType": "AA"
     }
   ],
   "skills": [
