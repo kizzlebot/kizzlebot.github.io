@@ -26,8 +26,8 @@ export default class App extends React.Component {
   }
 
 
-  componentWillMount(){
-    this.setState(resume);
+  componentDidMount(){
+    // this.setState(resume);
   }
 
   render() {
