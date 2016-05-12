@@ -2,7 +2,7 @@ import React from 'react';
 import InlineCss from "react-inline-css";
 
 var $ = require('jquery');
-var style = require('!raw!sass!../../stylesheets/wrestler.scss');
+var style = require('!raw!sass!stylesheets/wrestler.scss');
 
 
 export default class Wrestler extends React.Component {

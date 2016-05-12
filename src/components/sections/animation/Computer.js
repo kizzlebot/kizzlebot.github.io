@@ -29,7 +29,7 @@ export default class Computer extends React.Component{
           </header>
           <section ref={'terminal'} className="terminal">
             <img
-              src={require('../../stylesheets/skills.gif')}
+              src={require('stylesheets/skills.gif')}
               loop={'infinite'}
               />
           </section>

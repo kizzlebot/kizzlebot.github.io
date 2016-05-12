@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var bourbon = require('node-bourbon').includePaths;
 
 var config = {
 	devtool: process.env.WEBPACK_DEVTOOL || 'eval',
@@ -22,7 +23,7 @@ var config = {
 		moduleDirectories:['node_modules'],
 		alias:{
       bootstrap:`${__dirname}/node_modules/bootstrap`,
-			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist/js/jquery.guaw.min.js`,
+			'guav-dev':`${__dirname}/node_modules/guaw-dev/dist`,
 			'typed.js':`${__dirname}/node_modules/typed.js/js/typed.js`,
 			'stylesheets':`${__dirname}/src/stylesheets`
     }
@@ -30,11 +31,12 @@ var config = {
 
 	module: {
 		loaders: [
-      { test: /\.(js|jsx)*$/,                                   loaders: ['react-hot', 'babel'], include: path.join(__dirname, 'src')},
+      { test: /\.(js|jsx)*$/,                                   loaders: ['react-hot', 'babel'], 	exclude:/node_moduels/, include: path.join(__dirname, 'src'), presets:['es2015', 'react']},
 			{ test: /\.css$/, 																				loader: 'style-loader!css-loader' },
 			// { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
       { test: /\.less$/,                                        loaders: ['style', 'css', 'less'] },
-      { test: /\.scss$/,                                        loaders: ['style', 'css', 'sass'] },
+      // { test: /\.scss$/,                                        loaders: ['style', 'css', 'sass'] },
+			{ test: /\.scss$/, 																				loader: "style!css!sass?includePaths[]=" + bourbon},
 			{ test: /\.json$/,                                        loaders: ['json'] },
 			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, 										loader: "file" },
 			{ test: /\.(woff|woff2)$/, 																loader: "url?prefix=font/&limit=5000" },
@@ -45,8 +47,8 @@ var config = {
 			{ test: /\.png/, 																					loader: "url-loader?limit=10000&mimetype=image/png" },
 			{ test: require.resolve('jquery'),                        loader: 'expose?$!expose?jQuery' },
 			{ test: require.resolve('snapsvg'), 											loader: 'imports-loader?this=>window,fix=>module.exports=0' },
-			{ test: require.resolve('./node_modules/guaw-dev/dist/js/jquery.guaw.min.js'), 								loader: 'imports-loader?this=>window,fix=>module.exports=0' },
-			{ test: require.resolve('./node_modules/typed.js/js/typed.js'), 															loader: 'imports-loader?this=>window,fix=>module.exports=0' },
+			// { test: require.resolve('./node_modules/guaw-dev/dist/js/jquery.guaw.min.js'), 								loader: 'imports-loader?this=>window,fix=>module.exports=0' },
+			// { test: require.resolve('./node_modules/typed.js/js/typed.js'), 															loader: 'imports-loader?this=>window,fix=>module.exports=0' },
 			{ test: /bootstrap\/\dist\/js\//,                         loader: 'imports?jQuery=jquery' }
 		]
 	},

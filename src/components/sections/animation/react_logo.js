@@ -1,4 +1,5 @@
 let React = require('react');
+let ReactDOM = require('react-dom');
 
 const data = {
   path1: {
@@ -27,6 +28,10 @@ let animate = function(handle) {
   });
 };
 
+
+
+
+
 class ReactLogo extends React.Component {
   constructor(props) {
     super(props);
@@ -36,44 +41,29 @@ class ReactLogo extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.animation) {
-      animate(()=> {
-        this.tweenLoop();
-      });
-    }
-
-    Object.keys(data).map(ref => {
-      this[ref] = React.findDOMNode(this.refs[ref]);
-    });
+    if (this.props.animation) animate( () => this.tweenLoop() );
+    Object.keys(data).map(ref => this[ref] = this.refs[ref]);
   }
 
   getPathTotalLength() {
-    return this.pathTotalLength || React.findDOMNode(this.refs.path1).getTotalLength();
+    return this.pathTotalLength || this.refs.path1.getTotalLength();
   }
 
   tweenLoop() {
     this.current = this.current || 0;
     this.pathTotalLength = this.getPathTotalLength();
 
-    if (this.current >= this.pathTotalLength) {
-      this.current = 0;
-    }
-    this.current += this.pathTotalLength / this.props.duration;
+    this.current = this.pathTotalLength / this.props.duration + ((this.current >= this.pathTotalLength) ? 0 : this.current);
     this.setState({
       length: this.current
     });
   }
 
   getTransforms() {
-
-    if (!this.refs.path1) {
-      return [];
-    }
-
-    return Object.keys(data).map(ref => {
+    return (this.refs.path1) ? Object.keys(data).map(ref => {
       let pos = this[ref].getPointAtLength(this.state.length);
       return `translate(${pos.x}px, ${pos.y}px)`;
-    });
+    }) : []
   }
 
   render() {
@@ -91,6 +81,7 @@ class ReactLogo extends React.Component {
           <circle ref="circle2" fill={props.smallCircleFillColor} cx="0" cy="0" r={props.smallCircleRadius} style={{transform: transforms[1], WebkitTransform: transforms[1]}}></circle>
           <circle ref="circle3" fill={props.smallCircleFillColor} cx="0" cy="0" r={props.smallCircleRadius} style={{transform: transforms[2], WebkitTransform: transforms[2]}}></circle>
         </svg>
+        <p style={{textAlign:'center'}}>React.js</p>
       </div>
     );
   }

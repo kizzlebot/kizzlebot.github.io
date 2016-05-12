@@ -23,7 +23,7 @@ export default class TOC extends React.Component {
   }
   render(){
   // console.log(this.props.sections);
-    
+
     return (
       <nav className="nav nav__wrapper" id="navbar-example">
         <ul className="nav">
@@ -31,7 +31,9 @@ export default class TOC extends React.Component {
             return (
               <li key={`toc-${i}`} role="presentation" className={(i == 0) ? 'active': ''}>
                 <a href={`#section${i+1}`} ref={`toc-${i}`}>
+                <div>
                   <span className="nav__counter">0{`${i+1}`}</span>
+                  </div>
                   <span className='span_title'> {e.title}</span>
                   <h3 className="nav__title">{`${e.title}`}</h3>
                   <p className="nav__body">

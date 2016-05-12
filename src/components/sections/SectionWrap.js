@@ -1,18 +1,17 @@
 import React from 'react';
-
 var $ = require('jquery');
-import Computer from './animation/Computer';
+var ReactLogo = require('./animation/react_logo');
 
 
-export default class Skills extends React.Component {
+export default class SectionWrap extends React.Component {
   render(){
     return (
       <section className={`section`} id={this.props.id}>
         <div className={'container'}>
           <div className={'row'}>
-            <div className={'col-xs-offset-2 col-xs-10'}>
-              <h1></h1>
-              <Computer />
+            <div className={'col-md-4'}>&nbsp;</div>
+            <div className={'col-md-8 pull-right'}>
+              {this.props.children}
             </div>
           </div>
         </div>
