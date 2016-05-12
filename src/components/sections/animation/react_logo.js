@@ -81,6 +81,7 @@ class ReactLogo extends React.Component {
           <circle ref="circle2" fill={props.smallCircleFillColor} cx="0" cy="0" r={props.smallCircleRadius} style={{transform: transforms[1], WebkitTransform: transforms[1]}}></circle>
           <circle ref="circle3" fill={props.smallCircleFillColor} cx="0" cy="0" r={props.smallCircleRadius} style={{transform: transforms[2], WebkitTransform: transforms[2]}}></circle>
         </svg>
+        <p style={{textAlign:'center'}}>React.js</p>
       </div>
     );
   }

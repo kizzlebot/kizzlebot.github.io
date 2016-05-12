@@ -24,6 +24,7 @@ export default class Education extends React.Component {
                 <ul>
                   <li>{e.area} ({e.studyType})</li>
                   <li>{moment(e.startDate).format('MM/YYYY')} - {(e.endDate)? moment(e.endDate).format('MM/YYYY') : 'current'}</li>
+
                 </ul>
               </li>
             );

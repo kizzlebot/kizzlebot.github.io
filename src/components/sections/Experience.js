@@ -7,6 +7,14 @@ import SectionWrap from './SectionWrap';
 
 
 export default class Experience extends React.Component {
+  _printHighlights(e){
+    return (e.highlights.length > 0) ? (
+      <li>
+        Info:
+        <ul>{e.highlights.map(f => (<li key={'highlight'+f}>{f}</li>))}</ul>
+      </li>
+    ) : null;
+  }
   render(){
     return (
       <SectionWrap {...this.props}>
@@ -19,6 +27,8 @@ export default class Experience extends React.Component {
                 <ul className='work_experience_info'>
                   <li>{e.position}</li>
                   <li>{moment(e.startDate).format('MM/YYYY')} - {(e.endDate)? moment(e.endDate).format('MM/YYYY') : 'current'}</li>
+                  <li>{e.summary}</li>
+                  {this._printHighlights(e)}
                 </ul>
               </li>
             </ul>

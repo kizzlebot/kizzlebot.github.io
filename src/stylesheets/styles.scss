@@ -47,6 +47,8 @@
   & > section {
     transition:all 0.5s ease-in-out;
     min-height: 100vh;
+    padding-top: 3em;
+    padding-bottom: 3em;
     background-color: #22A7F0;
     .container{ z-index:9; }
     .svg_background{
